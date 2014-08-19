@@ -1,0 +1,18 @@
+{
+  "index": {
+    "title": "indexです",
+    "name": "indexindex"
+  },
+  "hoge": {
+    "title": "hogeです",
+    "name": "hogehoge"
+  },
+  "page2": {
+    "title": "page2です",
+    "name": "page2page2"
+  },
+  "page1": {
+    "title": "page1です",
+    "name": "page2page2"
+  }
+}

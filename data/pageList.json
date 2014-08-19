@@ -1,0 +1,18 @@
+{
+  "index": {
+    "url": "/",
+    "file": "index.hbs"
+  },
+  "hoge": {
+    "url": "/hoge/hoge/",
+    "file": "hoge/hoge.hbs"
+  },
+  "hogeIndex": {
+    "url": "/hoge/",
+    "file": "hoge/index.hbs"
+  },
+  "page2": {
+    "url": "/page2/",
+    "file": "page2.hbs"
+  }
+}

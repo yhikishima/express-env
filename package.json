@@ -14,6 +14,8 @@
     "grunt": "~0.4.2",
     "grunt-express-server": "~0.4.11",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-jshint": "~0.8.0"
+    "grunt-contrib-jshint": "~0.8.0",
+    "assemble-handlebars": "^0.2.3",
+    "grunt-wget": "^0.1.2"
   }
 }

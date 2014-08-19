@@ -14,9 +14,11 @@ module.exports = function(grunt) {
       },
       all: jsFiles
     },
+
     express: {
       options: {
-        script: 'app.js'
+        script: 'app.js',
+        livereload: true
       },
       dev: {
         options: {
@@ -24,10 +26,48 @@ module.exports = function(grunt) {
         }
       }
     },
+
+  // HTML生成
+    assemble: {
+      options: {
+        flatten: true,
+        data: ['data/*'],
+        partials: ['views/partials/*.hbs']
+      },
+
+      compile: {
+        expand: true,
+        cwd: 'views/',
+        src: [
+          '**/*.hbs',
+        ],
+        dest: 'public/'
+      }
+    },
+
+    wget: {
+      baseUrl: {
+        options: {
+          baseUrl: 'http://localhost:3000'
+        },
+        src: [
+          'index.html'
+        ],
+        dest: '/'
+      }
+    },
+
     watch: {
       jshint: {
         files: jsFiles,
         tasks: [ 'jshint:all' ]
+      },
+      hbs: {
+        files: 'views/**/*.hbs',
+        helpers: 'views/helpers/*.js',
+        options: {
+          livereload: true
+        }
       },
       express: {
         files: jsFiles,
@@ -42,6 +82,8 @@ module.exports = function(grunt) {
 
   grunt.registerTask('server', [ 'jshint:all', 'express:dev', 'watch' ]);
 
+  grunt.registerTask('build', [ 'express:dev', 'wget', 'watch' ]);
+
   grunt.registerTask('delay', 'Delay for express restart', function() {
     setTimeout(this.async(), 1000);
   });
@@ -49,4 +91,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-express-server');
+  grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-wget');
 };
