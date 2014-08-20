@@ -1,0 +1,575 @@
+
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>予約詳細 | AirRESERVE</title>
+  <link rel="stylesheet" href="/css/common.css">
+
+<!--[if lt IE 9]>
+<script src="/js/lib/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body class="ly-PRSRM010501P">
+  <header class="ly-header">
+    <h1 class="hdLv1">
+      <a href="/"><!-- AirRESERVE --></a>
+    </h1>
+
+    <nav class="nav">
+      <ul class="linkList">
+        <li class="js-linkListItem ly-popupBalloon">
+          <a href="/" class="js-link" id="js-link">カレンダー１</a>
+
+          <ul class="js-linkList popupBalloon">
+            <li>カレンダー１</li>
+            <li><a href="#">カレンダー２</a></li>
+            <li><a href="#">カレンダー３</a></li>
+          </ul>
+        </li>
+
+        <li id="" class="js-defaultSetTrigger ly-popupBalloon">
+          <a href="/">基本設定</a>
+          <ul class="js-defaultSetTarget popupBalloon">
+            <li><a href="PRCBA010101P.html">店舗情報詳細</a></li>
+            <li><a href="PRSRM011601P.html">カレンダー設定</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="ly-wrapper">
+
+    <section class="ly-sideBar">
+      <ul class="linkList">
+        <li>
+          <span class="icn icnSidebar01"></span>
+          <a href="/PRSRM010102P.html">予約カレンダー</a>
+        </li>
+
+        <li>
+          <span class="icn icnSidebar02"></span>
+          <a href="/PRSRM010301P.html">予約一覧</a>
+        </li>
+
+        <li>
+          <span class="icn icnSidebar03"></span>
+          <a href="/PRCUM010101P.html">顧客一覧</a>
+        </li>
+
+        <li>
+          <span class="icn icnSidebar04"></span>
+          在庫設定
+          <span class="icn icnArrowR"></span>
+
+          <ul class="linkList listDetail">
+            <li class="current"><a href="/PRSRM011601P.html">カレンダー設定</a></li>
+            <li><a href="/PRSSM015001P.html">メニューカテゴリ設定</a></li>
+            <li><a href="/PRSSM012001P.html">メニュー設定</a></li>
+            <li><a href="/PRSSM011101P.html">在庫設定</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <span class="icn icnSidebar05"></span>
+          店舗設定
+          <span class="icn icnArrowR"></span>
+
+          <ul class="linkList listDetail">
+            <li><a href="/PRCBA010101P.html">基本情報設定</a></li>
+            <li><a href="/PRCBA010501P.html">デザイン設定</a></li>
+            <li><a href="/PRCBA010201P.html">メールテンプレート設定</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="icn icnSidebar06"></span>
+          <a href="">初めての方へ</a>
+        </li>
+      </ul>
+    </section><!-- / #sideBar -->
+
+    <section class="ly-main">
+
+      <!-- パンくず&マニュアル -->
+      <div class="ly-mainHeader">
+        <ol class="linkList breadcrumb">
+          <li><a href="/PRSRM010301P.html">予約一覧</a></li>
+          <li>予約詳細</li>
+        </ol>
+
+        <p class="manualLink">
+          <a href="#">
+            <span class="icn icnLinkArrowR"></span>
+            この画面のマニュアルはこちら
+          </a>
+        </p>
+      </div>
+
+      <div class="ly-mainTtl">
+        <h2 class="hdLv2 has-hdIcn ">
+          <span class="icn hdIcn"></span>
+          予約詳細
+        </h2>
+        <a class="btn">登録</a>
+      </div>
+
+      <div class="ly-mainSectionLv1">
+        <!-- 説明文言 -->
+        <div class="ly-mainMsg msgExplanation">
+          <p>予約の詳細が確認できます。</p>
+          <p>予約ステータスを変更したい場合は、変更後のステータスを選択してから「更新する」ボタンを押下してください。</p>
+          <p>その他の情報を変更したい場合は、「編集する」ボタンを押下して、各編集画面にて変更を行ってください。</p>
+
+          <p class="registDate">予約登録日時 : 2014/08/05(火) 10:12</p>
+        </div><!-- / .sectionMsg msgExplanation -->
+      </div>
+
+      <section class="ly-mainSectionLv1">
+
+        <h3 class="hdLv3 ly-mainSectionLv1__ttl">予約ステータス</h3>
+
+        <table class="tbl type-hAxisTtl">
+          <thead>
+            <tr>
+              <th>予約ステータス</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="label labelStatusOpening">仮予約</span>
+              </td>
+              <td>
+                <select id="">
+                  <option value="1">予約確定</option>
+                  <option value="2">受付完了</option>
+                  <option value="3">済み</option>
+                </select>
+                <button type="button" class="btn btnS js-button">更新する</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <section class="ly-mainSectionLv2">
+          <h3 class="hdLv3">予約ステータス</h3>
+
+          <table class="tbl type-hAxisTtl">
+            <thead>
+              <tr>
+                <th>予約ステータス</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="label labelStatusOpening">仮予約</span>
+                </td>
+                <td>
+                  <select id="">
+                    <option value="1">予約確定</option>
+                    <option value="2">受付完了</option>
+                    <option value="3">済み</option>
+                  </select>
+                  <button type="button" class="btn btnS js-button">更新する</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </section>
+
+      </section>
+
+      <section class="ly-mainSectionLv1">
+      </section>
+
+
+        <section class="ly-mainBody">
+
+          <section class="ly-mainBodyContents">
+
+
+
+
+            <div class="sectionHeaderLv2">
+              <h2 class="hdLv2">基本情報</h2>
+
+              <div class="buttons">
+                <button class="btn btnS" onclick="location.href='PRSRM010601P.html'" type="button">編集する</button>
+              </div>
+
+            </div><!-- / .sectionHeaderLv2 -->
+
+            <div class="sectionContentLv2 wrapTbl">
+
+              <table class="tblType02">
+                <tbody>
+
+                  <tr>
+                    <th>
+                      予約受付担当名
+                    </th>
+                    <td>
+                      山田次郎
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      予約経路
+                    </th>
+                    <td>
+                      電話予約
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      予約番号
+                    </th>
+                    <td>
+                      0000000
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      メニューカテゴリ
+                    </th>
+                    <td>
+                      メニューカテゴリ１
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      メニュー
+                    </th>
+                    <td>
+                      メニュー１
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      リソースグループ情報
+                    </th>
+                    <td>
+                      リソースグループ情報１
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      利用日時
+                    </th>
+                    <td>
+                      2014年6年1日 13:30〜 2014年6年2日 15:30
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      予約数
+                    </th>
+                    <td>
+                      2
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      合計料金（税込）
+                    </th>
+                    <td>
+                      9,800円
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+            </div><!-- / .sectionContentLv2 -->
+
+          </section><!-- / .sectionLv2 -->
+
+
+          <div class="sectionLv2">
+
+            <div class="sectionHeaderLv2">
+              <h2 class="hdLv2">予約者情報</h2>
+
+              <div class="buttons">
+                <button class="btn btnS" onclick="location.href='PRSRM010701P.html'" type="button">編集する</button>
+              </div>
+            </div><!-- / .sectionHeaderLv2 -->
+
+            <div class="sectionDiscription tar">
+              <a href="/PRCUM010201P.html"><span class="icn icnLinkArrowR"></span>顧客情報の詳細を確認する</a>
+            </div>
+
+            <div class="sectionContentLv2 wrapTbl">
+
+              <table class="tblType02">
+                <tbody>
+                  <tr>
+                    <th>
+                      氏名（カナ）
+                    </th>
+                    <td>
+                      ヤマダ タロウ
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      氏名（漢字）
+                    </th>
+                    <td>
+                      山田 太郎&nbsp;<span class="tblRequired">※顧客情報では「山田太郎」で登録されています。</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      電話番号１
+                    </th>
+                    <td>
+                      06066666666
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      電話番号２
+                    </th>
+                    <td>
+                      05066666666
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      メールアドレス１
+                    </th>
+                    <td>
+                      test1@gmail.com
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      メールアドレス２
+                    </th>
+                    <td>
+                      test2@gmail.com
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                      お客様番号
+                    </th>
+                    <td>
+                      A00000000
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table><!-- / .tblType02 -->
+
+            </div><!-- / .sectionContentLv2 -->
+
+          </div><!-- / .sectionLv2 -->
+
+          <div class="sectionLv2">
+
+            <div class="sectionHeaderLv2">
+              <h2 class="hdLv2">予約時メモ</h2>
+
+              <div class="buttons">
+                <button type="button" class="btn btnS jsMemoPopupTrigger">編集する</button>
+              </div>
+            </div><!-- / .sectionHeaderLv2 -->
+
+            <div class="sectionContentLv2 wrapTbl">
+
+              <table class="tblType02">
+                <tbody>
+                  <tr>
+                    <th>
+                      メモ内容
+                    </th>
+                    <td>
+                      ほげほげ
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table><!-- / .tblType02 -->
+
+            </div><!-- / .sectionContentLv2 -->
+
+          </div><!-- / .sectionLv2 -->
+
+          <div class="sectionSubAction">
+            <div class="buttons">
+              <button type="button" class="btn btnNegative jsPopupTrigger">キャンセルにする</button>
+            </div>
+          </div>
+
+        </section><!-- / .sectionContentLv1 -->
+
+
+        <div class="sectionPopup jsPopupTarget">
+
+          <div class="innerPopup">
+
+            <div class="sectionPopupClose">
+              <span class="textLink jsPopupClose">閉じる</span>
+            </div>
+
+            <div class="sectionPopupHeader">
+              <h2 class="hdLv2">予約情報キャンセル確認</h2>
+            </div>
+
+            <div class="sectionMsg msgExplanation">
+              <p>予約をキャンセルします。よろしいですか。</p>
+              <p>よろしければキャンセル理由を選択してキャンセルしてください。</p>
+            </div>
+
+            <div class="sectionPopupContent">
+
+              <ul class="listH popUpContentTxt">
+                <li><label><input type="radio" name="radioName1" value="1">店舗都合</label></li>
+                <li><label><input type="radio" name="radioName1" value="2">お客様都合</label></li>
+                <li><label><input type="radio" name="radioName1" value="3">無断</label></li>
+              </ul>
+
+            </div><!-- / .sectionPopupContent -->
+
+            <div class="sectionMainAction sectionDeleteAction">
+              <div class="buttons">
+                <button type="button" class="btn btnPrimary" onclick="location.href='PRSRM010301P.html'">キャンセルにする</button>
+              </div>
+            </div><!-- / .sectionMainAction -->
+
+          </div><!-- / .innerPopup -->
+
+        </div><!-- / .sectionPopup -->
+
+        <div class="sectionPopup jsConfirmPopupTarget">
+
+          <div class="innerPopup">
+
+            <div class="sectionPopupClose">
+              <span class="textLink jsConfirmPopupClose">閉じる</span>
+            </div>
+
+            <div class="sectionPopupHeader">
+              <h2 class="hdLv2">予約確定確認</h2>
+            </div>
+
+            <div class="sectionMsg msgExplanation">
+              <p>予約を確定します。よろしいですか。</p>
+            </div>
+
+            <div class="sectionMainAction">
+              <div class="buttons">
+                <button type="button" class="btn btnPrimary" onclick="location.href='PRSRM010301P.html'">予約を確定する</button>
+              </div>
+            </div><!-- / .sectionMainAction -->
+
+          </div><!-- / .innerPopup -->
+
+        </div><!-- / .sectionPopup -->
+
+        <div class="sectionPopup jsMemoPopupTarget">
+
+          <div class="innerPopup">
+
+            <div class="sectionPopupClose">
+              <span class="textLink jsMemoPopupClose">閉じる</span>
+            </div>
+
+            <div class="sectionPopupHeader">
+              <h2 class="hdLv2">予約時メモ編集</h2>
+            </div>
+
+            <div class="sectionMsg msgExplanation">
+              <p>予約時メモの編集が行えます。</p>
+            </div>
+
+            <div class="sectionPopupContent">
+              <!-- [後からtextarea { resize: none; }で固定する ] -->
+              <textarea class="textArea01 popUpContentTxt" cols="78" rows="6">ほげほげ</textarea>
+            </div><!-- / .sectionPopupContent -->
+
+            <div class="sectionMainAction">
+              <div class="buttons">
+                <button type="button" class="btn btnPrimary jsMemoPopupClose" onclick="">登録する</button>
+              </div>
+            </div><!-- / .sectionMainAction -->
+
+          </div><!-- / .innerPopup -->
+
+        </div><!-- / .sectionPopup -->
+
+
+        <div class="sectionFooterLv1">
+
+          <!-- 戻るリンク start -->
+          <p class="linkBack">
+            <a href="/PRSRM010301P.html"><span class="icn icnLinkBack"></span>戻る
+            </a>
+          </p>
+          <!-- 戻るリンク end -->
+
+
+
+          <!-- ページ上部へ start -->
+          <p class="pageTopLink">
+            <a href="#"><span class="icn icnPageTopLink"></span>ページ上部へ</a>
+          </p>
+          <!-- ページ上部へ end -->
+
+
+        </div><!-- / .sectionFooterLv1 -->
+
+      </div><!-- / .sectionLv1 -->
+
+
+
+
+    </div><!-- / #mainContent -->
+
+    <footer class="gFooterLv1">
+      <address>
+        <p class="helpdesk">ヘルプデスク：<span>0120-36-0493</span>(年中無休10:00-21:00)　<span>※メールでのお問い合わせは<a href="">こちら</a></span></p>
+        <p class="logo"><a target="_blank" href="http://www.recruit-lifestyle.co.jp/">RECRUIT (C) Recruit Lifestyle Co.,Ltd.</a></p>
+      </address>
+    </footer>
+  </main><!-- / .container -->
+
+
+    <!--[if gte IE 9]><!-->
+    <script src="/js/lib/jquery-2.1.1.min.js"></script><!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="/js/lib/jquery-1.11.1.min.js"></script>
+<![endif]-->
+<script src="/js/common.js"></script>
+
+
+
+
+
+<script src="./js/sub/PRSRM010501P.js"></script>
+
+</body>
+</html>

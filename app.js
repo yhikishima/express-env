@@ -16,7 +16,7 @@ hbs.express3({
   // OPTIONAL settings
   // blockHelperName: "views/helpers/*.js",
   // contentHelperName: "{String} Override 'contentFor' helper name.",
-  defaultLayout: "/views/partials/layout.hbs"
+  defaultLayout: "/assets/views/partials/layout.hbs"
   // extname: "{String} Extension for templates, defaults to `.hbs`",
   // handlebars: "{Module} Use external handlebars instead of express-hbs dependency",
   // i18n: "{Object} i18n object",
@@ -28,7 +28,7 @@ hbs.express3({
 // all environments
 app.set('port', process.env.PORT || 3000);
 // app.set('port', 3002);
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'assets/views'));
 app.set('view engine', 'hbs');
 app.use(express.favicon());
 app.use(express.logger('dev'));
@@ -40,7 +40,7 @@ app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 // app.engine('hbs', require('hbs').__express);
 app.engine('hbs', hbs.express3({
-  partialsDir: __dirname + '/views/partials'
+  partialsDir: __dirname + '/assets/views/partials'
 }));
 // hbs.registerPartials(__dirname + '/views/partials');
 

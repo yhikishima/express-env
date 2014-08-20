@@ -28,34 +28,34 @@ module.exports = function(grunt) {
     },
 
   // HTML生成
-    assemble: {
-      options: {
-        flatten: true,
-        data: ['data/*'],
-        partials: ['views/partials/*.hbs']
-      },
+    // assemble: {
+    //   options: {
+    //     flatten: true,
+    //     data: ['data/*'],
+    //     partials: ['views/partials/*.hbs']
+    //   },
 
-      compile: {
-        expand: true,
-        cwd: 'views/',
-        src: [
-          '**/*.hbs',
-        ],
-        dest: 'public/'
-      }
-    },
+    //   compile: {
+    //     expand: true,
+    //     cwd: 'views/',
+    //     src: [
+    //       '**/*.hbs',
+    //     ],
+    //     dest: 'public/'
+    //   }
+    // },
 
-    wget: {
-      baseUrl: {
-        options: {
-          baseUrl: 'http://localhost:3000'
-        },
-        src: [
-          'index.html'
-        ],
-        dest: '/'
-      }
-    },
+    // wget: {
+    //   baseUrl: {
+    //     options: {
+    //       baseUrl: 'http://localhost:3000'
+    //     },
+    //     src: [
+    //       'index.html'
+    //     ],
+    //     dest: '/'
+    //   }
+    // },
 
     watch: {
       jshint: {
